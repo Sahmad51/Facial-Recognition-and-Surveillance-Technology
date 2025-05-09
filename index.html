@@ -61,6 +61,21 @@ nav button img {
     ul {
       padding-left: 20px;
     }
+    
+    body::before {
+  content: "";
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
+  background-image: url('https://img.icons8.com/ios-filled/100/cccccc/face-id.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: -1;
+}
   </style>
 </head>
 <body>
