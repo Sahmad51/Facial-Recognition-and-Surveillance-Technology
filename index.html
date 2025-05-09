@@ -191,11 +191,22 @@ is exactly why we wanted to talk about it.</p>
   </section>
 
   <script>
-    function showSection(id) {
-      const sections = document.querySelectorAll("section");
-      sections.forEach(sec => sec.style.display = "none");
-      document.getElementById(id).style.display = "block";
-    }
+   function showSection(id) {
+  const sections = document.querySelectorAll("section");
+  sections.forEach(sec => {
+    sec.classList.remove("active");
+    sec.style.display = "none";
+  });
+  const target = document.getElementById(id);
+  target.style.display = "block";
+  setTimeout(() => {
+    target.classList.add("active");
+  }, 10);
+}
+
+// Show Home by default
+showSection('home');
+    
   </script>
 
 </body>
