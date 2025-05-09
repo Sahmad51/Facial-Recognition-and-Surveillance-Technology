@@ -37,14 +37,22 @@ nav button img {
   vertical-align: middle;
   margin-right: 6px;
 }
-    section {
-      padding: 30px;
-      max-width: 850px;
-      margin: auto;
-      background-color: white;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   section {
+  padding: 30px;
+  max-width: 850px;
+  margin: auto;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: none;
+}
+
+section.active {
+  display: block !important;
+  opacity: 1;
     }
 
     h2 {
